@@ -23,7 +23,7 @@ public class Login {
         System.out.println("Enter password");
         String enterPassword = input.nextLine();
 
-        if(login.userName.equals(enterUserName) && login.password.equals(enterPassword)){
+        if(login.userName.equalsIgnoreCase(enterUserName) && login.password.equals(enterPassword)){
             System.out.println("Login successfully...");
         }else {
             System.out.println("Username or password invalid.");
